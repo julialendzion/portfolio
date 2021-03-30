@@ -16,11 +16,12 @@ h1 {
   word-break: break-all;
   font-family: var(--font-1);
   font-weight: 200;
-  font-size: calc(40px + 9vw);
+  font-size: calc(50px + 9vw);
   width: 2.5em;
   letter-spacing: 1vw;
   margin-top: -2vw;
   margin-bottom: -4vw;
+  margin-left: 3vw;
   padding: 0;
   color: var(--color-2);
 }
@@ -28,11 +29,12 @@ h2 {
   word-break: break-all;
   font-family: var(--font-1);
   font-weight: 200;
-  font-size: calc(40px + 9vw);
+  font-size: calc(50px + 9vw);
   width: 2.5em;
   letter-spacing: 1vw;
   margin-top: -2vw;
   margin-bottom: -4vw;
+  margin-left: 3vw;
   padding: 0;
   color: var(--color-3);
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
@@ -56,8 +58,9 @@ h2 {
   margin-top: 0;
 }
 nav {
+  display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 3vw;
   margin-top: 0;
 }
 ul {
