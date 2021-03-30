@@ -1,0 +1,115 @@
+@import url("https://use.typekit.net/wrl1xwi.css");
+
+:root {
+  --color-1: #ced0d5;
+  --color-2: #969ead;
+  --color-3: white;
+
+  --font-1: neue-haas-grotesk-display;
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+h1 {
+  word-break: break-all;
+  font-family: var(--font-1);
+  font-weight: 200;
+  font-size: calc(40px + 9vw);
+  width: 2.5em;
+  letter-spacing: 1vw;
+  margin-top: -2vw;
+  margin-bottom: -4vw;
+  padding: 0;
+  color: var(--color-2);
+}
+h2 {
+  word-break: break-all;
+  font-family: var(--font-1);
+  font-weight: 200;
+  font-size: calc(40px + 9vw);
+  width: 2.5em;
+  letter-spacing: 1vw;
+  margin-top: -2vw;
+  margin-bottom: -4vw;
+  padding: 0;
+  color: var(--color-3);
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.tfo {
+  letter-spacing: 0.112em;
+}
+.lio {
+  letter-spacing: 0.292em;
+}
+#title {
+  width: 50%;
+}
+#title2 {
+  position: absolute;
+  z-index: 1000;
+  top: 1.2em;
+  left: 1.6em;
+  margin-top: 0;
+}
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-around;
+}
+
+header a:link {
+  text-decoration: none;
+  font-family: var(--font-1);
+  color: #fff;
+}
+header a:visited {
+  text-decoration: none;
+  font-family: var(--font-1);
+  color: white;
+}
+header a:hover {
+  text-decoration: none;
+  font-family: var(--font-1);
+  animation: zoom;
+  animation-fill-mode: forwards;
+}
+
+header a:active {
+  text-decoration: none;
+  font-family: var(--font-1);
+  color: white;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  border: 1px white;
+  border-style: solid;
+  margin-bottom: 4vw;
+}
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(0.99);
+  }
+}

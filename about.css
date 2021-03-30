@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/wrl1xwi.css");
+
+:root {
+  --color-1: #ced0d5;
+  --color-2: #969ead;
+  --color-3: white;
+
+  --font-1: neue-haas-grotesk-display;
+}
+header {
+  height: 100vh;
+}
+h3 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 2.3em;
+  margin: 0;
+  color: var(--color-2);
+  letter-spacing: 1vw;
+}
+
+p {
+  font-family: var(--font-1);
+  color: var(--color-3);
+  letter-spacing: 0.3vw;
+  font-size: 1.17em;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+#intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 2em;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
