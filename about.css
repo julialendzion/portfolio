@@ -56,3 +56,48 @@ img {
     transform: translateY(20px);
   }
 }
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dot {
+  height: 5vw;
+  width: 5vw;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.dotempty {
+  height: 5vw;
+  width: 5vw;
+  border: 1px solid;
+  border-color: var(--color-3);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+h4 {
+  min-width: 90px;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.bold {
+  font-size: 1.2em;
+  letter-spacing: 0.6vw;
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 5em;
+}

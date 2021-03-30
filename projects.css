@@ -1,0 +1,101 @@
+@import url("https://use.typekit.net/wrl1xwi.css");
+
+:root {
+  --color-1: #ced0d5;
+  --color-2: #969ead;
+  --color-3: white;
+
+  --font-1: neue-haas-grotesk-display;
+}
+
+h3 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 2.3em;
+  margin-top: 9vw;
+  color: var(--color-2);
+  letter-spacing: 1vw;
+}
+
+/*Ze stronki foto gosi*/
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.portfolioArticle a {
+  text-decoration: none;
+  color: #111;
+}
+
+.portfolioPhotoBox {
+  width: 25rem;
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fisherbear {
+  background-image: url(img/fisherbear.png);
+}
+
+.timefortee {
+  background-image: url(images/at_portfolio_35mm/at1.jpg);
+}
+
+.anas {
+  background-image: url(images/asch_portfolio_photos/image00004.jpeg);
+}
+
+.alex {
+  background-image: url(images/ac_portfolio_photos/image00001.jpeg);
+}
+
+.kasia {
+  background-image: url(images/xafex/kasia1.jpeg);
+}
+
+.photoboxText {
+  width: 25rem;
+  height: 20rem;
+  transition: opacity 0.25s;
+  background-color: rgba(107, 115, 125, 0.7);
+}
+
+.photoboxText > * {
+  transform: translateY(-20px);
+  transition: transform 0.25s;
+}
+
+.photoboxText h4 {
+  position: relative;
+  font-size: 1.5em;
+  top: 5vh;
+  font-family: var(--font-1);
+  font-weight: 200;
+  color: var(--color-3);
+  text-transform: uppercase;
+  text-align: center;
+}
+.photoboxText p {
+  position: relative;
+  font-size: 1.2rem;
+  top: 5vh;
+  color: var(--color-3);
+  font-family: var(--font-1);
+  font-weight: 200;
+  left: 3em;
+  margin: 1vw;
+}
+
+.photoboxText:hover {
+  opacity: 0;
+}
+
+.photoboxText:hover > * {
+  transform: translateY(0);
+}
