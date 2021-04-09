@@ -4,8 +4,66 @@
   --color-1: #ced0d5;
   --color-2: #969ead;
   --color-3: white;
-
   --font-1: neue-haas-grotesk-display;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 98%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer .kolor,
+.kolorblack {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  bottom: ;
+}
+footer a {
+  color: white;
+  font-family: var(--font-1);
+  color: var(--color-3);
+  letter-spacing: 0.3vw;
+  font-size: 1.17em;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+}
+
+.kolor {
+  height: 4vw;
+  width: 4vw;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.kolorblack {
+  height: 4vw;
+  width: 4vw;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 body {
@@ -106,6 +164,7 @@ header a:active {
   border-style: solid;
   margin-bottom: 4vw;
 }
+
 header {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -115,4 +174,38 @@ header {
   to {
     transform: scale(0.99);
   }
+}
+
+/*Contact*/
+
+#contact h3 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 2.3em;
+  color: var(--color-3);
+  letter-spacing: 1vw;
+
+  margin-left: 3vw;
+}
+
+#contact img {
+  margin-right: 4vw;
+  max-width: 80px;
+}
+
+#contact main {
+  padding-bottom: 25vw;
+}
+#contact main p {
+  font-family: var(--font-1);
+  margin-top: -4vw;
+  font-size: 5vw;
+  letter-spacing: 0.4vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--color-2);
+}
+
+.continfo {
+  display: flex;
 }
