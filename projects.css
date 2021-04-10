@@ -19,7 +19,7 @@ h3 {
 /*Ze stronki foto gosi*/
 .portfolioGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 395px));
+  grid-template-columns: repeat(auto-fill, minmax(30px, 395px));
   gap: 2rem;
   justify-content: center;
   margin-top: 3rem;
