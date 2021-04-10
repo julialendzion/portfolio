@@ -3,12 +3,15 @@
 :root {
   --font-1: neue-haas-grotesk-display;
 }
-
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
 h3 {
   font-family: var(--font-1);
   font-weight: 400;
   font-size: 2.3em;
-  margin-top: 9vw;
   color: var(--color-2);
   letter-spacing: 1vw;
 }
@@ -16,21 +19,23 @@ h3 {
 /*Ze stronki foto gosi*/
 .portfolioGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 395px));
   gap: 2rem;
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
+.portfolioArticle {
+  max-width: 100%;
+}
 .portfolioArticle a {
   text-decoration: none;
   color: #111;
 }
 
 .portfolioPhotoBox {
-  width: 25rem;
-  height: 20rem;
+  width: 24.6rem;
+  height: 18.5rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -56,8 +61,8 @@ h3 {
 }
 
 .photoboxText {
-  width: 25rem;
-  height: 20rem;
+  width: 24.6rem;
+  height: 18.5rem;
   transition: opacity 0.25s;
   background-color: rgba(107, 115, 125, 0.7);
 }
@@ -70,7 +75,7 @@ h3 {
 .photoboxText h4 {
   position: relative;
   font-size: 1.5em;
-  top: 5vh;
+  top: 6vh;
   font-family: var(--font-1);
   font-weight: 200;
   color: var(--color-3);
@@ -86,6 +91,7 @@ h3 {
   font-weight: 200;
   left: 3em;
   margin: 1vw;
+  margin-left: 2vw;
 }
 
 .photoboxText:hover {
@@ -94,4 +100,16 @@ h3 {
 
 .photoboxText:hover > * {
   transform: translateY(0);
+}
+
+.visitBtn {
+  text-decoration: underline;
+
+  text-align: right;
+  font-family: var(--font-1);
+  color: var(--color-3);
+  letter-spacing: 0.3vw;
+  font-size: 1.2em;
+  margin-top: -2em;
+  margin-right: 5vw;
 }

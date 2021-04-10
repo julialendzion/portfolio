@@ -41,29 +41,11 @@ footer a {
   padding-right: 2.5vw;
   padding-left: 2.5vw;
 }
-
-.kolor {
-  height: 4vw;
-  width: 4vw;
-  background-color: var(--color-3);
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: auto;
+footer img {
+  max-width: 70%;
+  margin-top: 2vw;
   margin-bottom: auto;
-}
-
-.kolorblack {
-  height: 4vw;
-  width: 4vw;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: auto;
-  margin-bottom: auto;
+  cursor: pointer;
 }
 
 body {
@@ -188,7 +170,7 @@ header {
   margin-left: 3vw;
 }
 
-#contact img {
+#contact main img {
   margin-right: 4vw;
   max-width: 80px;
 }
