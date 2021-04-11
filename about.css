@@ -17,7 +17,7 @@ h3 {
   margin-left: 1vw;
 }
 
-p {
+main p {
   font-family: var(--font-1);
   color: var(--color-3);
   letter-spacing: 0.3vw;

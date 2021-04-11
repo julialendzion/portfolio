@@ -42,29 +42,30 @@ h3 {
 
 .fisherbear {
   background-image: url(img/fisherbear.png);
+  justify-content: center;
 }
 
 .timefortee {
-  background-image: url(images/at_portfolio_35mm/at1.jpg);
+  background-image: url(img/time4tee.png);
 }
 
-.anas {
-  background-image: url(images/asch_portfolio_photos/image00004.jpeg);
+.cherrypop {
+  background-image: url(img/cherrypop.png);
 }
 
-.alex {
-  background-image: url(images/ac_portfolio_photos/image00001.jpeg);
+.wineful {
+  background-image: url(img/wineful2.png);
 }
 
-.kasia {
-  background-image: url(images/xafex/kasia1.jpeg);
+.memover {
+  background-image: url(img/memover.png);
 }
 
 .photoboxText {
   width: 24.6rem;
   height: 18.5rem;
   transition: opacity 0.25s;
-  background-color: rgba(107, 115, 125, 0.7);
+  background-color: rgba(107, 115, 125, 0.85);
 }
 
 .photoboxText > * {
@@ -111,5 +112,22 @@ h3 {
   letter-spacing: 0.3vw;
   font-size: 1.2em;
   margin-top: -2em;
-  margin-right: 5vw;
+  margin-right: 2em;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    justify-content: center;
+  }
+  .portfolioPhotoBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22em;
+  }
+  .photoboxText {
+    margin-left: auto;
+    margin-right: auto;
+    width: 22em;
+  }
 }
