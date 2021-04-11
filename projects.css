@@ -116,8 +116,10 @@ h3 {
 }
 
 @media only screen and (max-width: 400px) {
+  html {
+    overflow-y: hidden;
+  }
   body {
-    margin: 0;
     justify-content: center;
   }
   .portfolioPhotoBox {
