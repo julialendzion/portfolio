@@ -102,3 +102,157 @@ section {
   margin-left: 3vw;
   margin-right: 3vw;
 }
+
+#homeBtn {
+  display: none;
+}
+
+#jadesktop {
+  display: none;
+}
+
+section h3 {
+  display: none;
+}
+
+@media only screen and (min-width: 775px) {
+  header div {
+    display: none;
+  }
+  header {
+    margin: 0;
+    display: inline;
+  }
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  #homeBtn {
+    display: inline;
+  }
+  .circle {
+    border: none;
+    height: 0;
+    line-height: 0;
+  }
+
+  .circle:hover {
+    background-color: transparent;
+  }
+
+  ul {
+    line-height: 0;
+    font-size: 1.1em;
+  }
+
+  li:hover {
+    text-decoration: underline;
+    color: var(--color-3);
+  }
+
+  #jadesktop {
+    display: inline;
+  }
+  #jamobile {
+    display: none;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  header {
+    height: auto;
+  }
+  #intro {
+    display: none;
+  }
+  #aboutme {
+    grid-area: me;
+    padding: 0;
+    margin: 0;
+  }
+
+  #skills {
+    grid-area: skills;
+    margin: 0;
+    display: none;
+  }
+  #dots {
+    grid-area: dots;
+  }
+  section {
+    margin-bottom: 0;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    padding: 0;
+  }
+  main img {
+    grid-area: img;
+    max-width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  main {
+    padding-bottom: 5vw;
+    display: grid;
+
+    grid-template-areas:
+      "img me me"
+      "img dots .";
+    grid-template-columns: 30% 35% 35%;
+  }
+  section h3 {
+    display: inline;
+  }
+
+  .dot {
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: var(--color-3);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .dotempty {
+    height: 1.3vw;
+    width: 1.3vw;
+    border: 1px solid;
+    border-color: var(--color-3);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  section div {
+    margin-left: -3vw;
+    line-height: 0vw;
+  }
+  section h4 {
+    font-size: 2vw;
+  }
+  main p {
+    font-size: 1.4vw;
+    margin-bottom: 5vw;
+    margin-right: 4vw;
+    text-align: left;
+    letter-spacing: 0.1vw;
+    padding: 0;
+  }
+  main h3 {
+    font-size: 2.4vw;
+    letter-spacing: 0.5vw;
+  }
+  div h4 {
+    font-size: 1.7vw;
+  }
+}
