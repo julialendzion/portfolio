@@ -133,3 +133,70 @@ h3 {
     width: 22em;
   }
 }
+
+@media only screen and (min-width: 775px) {
+  /*generalne*/
+  header div {
+    display: none;
+  }
+
+  nav a:link {
+    color: var(--color-2);
+  }
+  nav a:hover {
+    color: var(--color-2);
+  }
+  nav a:active {
+    color: var(--color-2);
+  }
+  nav a:visited {
+    color: var(--color-2);
+  }
+  header {
+    margin: 0;
+    display: inline;
+    height: auto;
+  }
+  ul {
+    flex-direction: row;
+    margin-right: -4vw;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 2vw;
+  }
+  #homeBtn {
+    display: inline;
+  }
+  .circle {
+    border: none;
+    height: 0;
+    line-height: 0;
+  }
+
+  .circle:hover {
+    background-color: transparent;
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
+  }
+
+  ul {
+    line-height: 0;
+    font-size: 1em;
+  }
+
+  li:hover {
+    text-decoration: underline;
+    color: var(--color-2);
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

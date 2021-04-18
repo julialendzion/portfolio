@@ -116,22 +116,37 @@ section h3 {
 }
 
 @media only screen and (min-width: 775px) {
+  /*generalne*/
   header div {
     display: none;
+  }
+
+  nav a:link {
+    color: var(--color-2);
+  }
+  nav a:hover {
+    color: var(--color-2);
+  }
+  nav a:active {
+    color: var(--color-2);
+  }
+  nav a:visited {
+    color: var(--color-2);
   }
   header {
     margin: 0;
     display: inline;
+    height: auto;
   }
   ul {
     flex-direction: row;
-    justify-content: space-between;
+    margin-right: -4vw;
   }
   nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding-top: 2vw;
   }
   #homeBtn {
     display: inline;
@@ -144,17 +159,29 @@ section h3 {
 
   .circle:hover {
     background-color: transparent;
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
   }
 
   ul {
     line-height: 0;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   li:hover {
     text-decoration: underline;
-    color: var(--color-3);
+    color: var(--color-2);
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
   }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*tylko do about*/
 
   #jadesktop {
     display: inline;
@@ -167,16 +194,14 @@ section h3 {
     display: none;
   }
 
-  header {
-    height: auto;
-  }
   #intro {
     display: none;
   }
   #aboutme {
     grid-area: me;
     padding: 0;
-    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   #skills {
@@ -200,7 +225,6 @@ section h3 {
     margin-bottom: auto;
   }
   main {
-    padding-bottom: 5vw;
     display: grid;
 
     grid-template-areas:
@@ -254,5 +278,10 @@ section h3 {
   }
   div h4 {
     font-size: 1.7vw;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
   }
 }

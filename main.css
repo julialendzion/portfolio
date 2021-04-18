@@ -122,8 +122,6 @@ header a:visited {
 header a:hover {
   text-decoration: none;
   font-family: var(--font-1);
-  animation: zoom;
-  animation-fill-mode: forwards;
 }
 
 header a:active {
@@ -149,12 +147,6 @@ header a:active {
 header {
   display: grid;
   grid-template-columns: 40% 60%;
-}
-
-@keyframes zoom {
-  to {
-    transform: scale(0.99);
-  }
 }
 
 /*Contact*/
@@ -246,5 +238,18 @@ header {
   #namecontainer {
     margin-left: 3vw;
     width: 100px;
+  }
+  footer span:hover {
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
+  }
+
+  footer span {
+    margin-right: 0.6vw;
+  }
+
+  footer p:hover {
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
   }
 } ;
