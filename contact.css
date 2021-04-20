@@ -1,3 +1,6 @@
+#homeBtn {
+  display: none;
+}
 @media only screen and (min-width: 775px) {
   /*generalne*/
   header div {
@@ -62,5 +65,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  #homeBtn {
+    display: inline;
+  }
+
+  main {
+    padding: 5vw;
   }
 }

@@ -147,6 +147,7 @@ section h3 {
     justify-content: space-between;
     margin: 0;
     padding-top: 2vw;
+    font-size: 1em;
   }
   #homeBtn {
     display: inline;
@@ -259,11 +260,9 @@ section h3 {
 
   section div {
     margin-left: -3vw;
-    line-height: 0vw;
+    line-height: 0.5vw;
   }
-  section h4 {
-    font-size: 2vw;
-  }
+
   main p {
     font-size: 1.4vw;
     margin-bottom: 5vw;
@@ -276,9 +275,10 @@ section h3 {
     font-size: 2.4vw;
     letter-spacing: 0.5vw;
   }
-  div h4 {
-    font-size: 1.7vw;
+  h4 {
+    font-size: 1em;
   }
+
   body {
     margin: 0;
     padding: 0;

@@ -252,4 +252,14 @@ header {
     transform: scale(0.9);
     animation-fill-mode: forwards;
   }
+  footer a {
+    font-size: 1.1em;
+  }
+  #contact main p {
+    font-size: 2em;
+  }
+  #contact main {
+    padding: 0;
+    margin-left: 5vw;
+  }
 } ;
